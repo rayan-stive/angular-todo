@@ -6,9 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./tache.component.scss']
 })
 export class TacheComponent {
-  tache = {
+  date: Date = new Date()
+  tache:number = 15
+
+  taches = {
     nom : 'DO list',
-    date : 'Today',
+    date : this.date,
     favoris: true
   }
 }
