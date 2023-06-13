@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CalendarView } from 'angular-calendar';
 
 @Component({
   selector: 'app-calendar',
@@ -7,4 +8,11 @@ import { Component } from '@angular/core';
 })
 export class CalendarComponent {
   viewDate: Date = new Date()
+
+  view:CalendarView = CalendarView.Week;
+  CalendarView = CalendarView;
+
+  setView(view:CalendarView){
+    this.view = view
+  }
 }
