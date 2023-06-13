@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./calendar.component.scss']
 })
 export class CalendarComponent {
-
+  viewDate: Date = new Date()
 }
